@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(2, 0, 0, 0.5), rgba(15, 0, 0, 0.8)), url(./bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.container{
+    text-align: right;
+    width: 380px;
+    height: 600px;
+    background-color: rgba(16, 16, 16, 0.5);
+    backdrop-filter: blur(18px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1;
+}
+.buttons{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 3;
+    overflow: hidden;
+    background-color: rgba(23, 23, 23, 0.4);
+    padding-top: 20px;
+    border-radius: 8px;
+    align-items: center;
+
+}
+.lowerbox{overflow: hidden;}
+.numbers, #negate, #dot{
+    background-color: rgba(05, 05, 07, 0.7);
+    width: 82px;
+    height: 60px;
+    color: #fff;
+    border: none;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 2px;
+    backdrop-filter: blur(15px);
+    outline: none;
+    z-index: 3;
+    user-select: none;
+    border: 3px solid transparent;
+    align-self: center;
+
+}
+.numbers:hover, #negate:hover, #dot:hover{
+    background-color: rgba(30, 52, 102, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+.operators{
+    width: 82px;
+    height: 60px;
+    background-color: rgba(225, 18, 18, 0.409);   
+    /* rgb(44, 32, 151) */
+    color: #fff;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: lighter;
+    margin: 2px;
+    outline: none;
+    z-index: 3;
+    border: 3px solid transparent;
+}
+.cha{
+    font-size: 2.5rem;
+}
+.operators:hover{
+    background-color: rgba(216, 83, 78, 0.967);
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+#back{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-stretch: ultra-condensed;
+}
+.upperbox{
+    padding: 10px;
+    height: 22%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: right;
+    z-index: 1;
+}
+.result{
+    height: 70px;
+
+}
+#result{
+    width: 100%;
+    font-size: 72px;
+    text-align: right;
+    background: none;
+    border: none;
+    color: #fff;
+    outline: none;
+    caret-color: rgba(255, 255, 255, 0.6);
+    z-index: 4;
+    
+    
+}
+#result::placeholder{
+    color:#fff;
+    opacity: 1;
+}
+.values{
+    text-align: right;
+    
+}
+#history{
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 4;
+    align-self: flex-end;
+}
+
+/* #light {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    z-index: -14;
+    border-radius: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: rgba(225, 225, 255, 0.1);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 50%);
+} */
+  
+
+
+

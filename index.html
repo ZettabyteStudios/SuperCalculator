@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upperbox">
+            <div class="values">
+                <div class="history">
+                    <p id="History"><code>0</code></p>
+                </div>
+                <div class="result">
+                    <input type="text" maxlength="16" id="result" placeholder="0"></input>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="lowerbox">
+            <div class="buttons">
+            
+                <button class="operators" id="" onclick="percent()">%</button>
+                <button class="operators" id="" onclick="CE()">CE</button>
+                <button class="operators" id="" onclick="C()">C</button>
+                <button class="operators cha" id="back" onclick="backspace()">↩</button>
+            
+            
+                <button class="operators" id="" onclick=""><sup>1</sup>/<sub>x</sub></button>
+                <button class="operators" id="square" onclick="">x²</button>
+                <button class="operators" id="sqroot" onclick="">√×</button>
+                <button class="operators cha" id="divide" onclick="operator('÷')">÷</button>
+            
+            
+                <button class="numbers" id="" onclick="text(7);">7</button>
+                <button class="numbers" id="" onclick="text(8)">8</button>
+                <button class="numbers" id="" onclick="text(9)">9</button>
+                <button class="operators cha" id="multiply" onclick="operator('×')">×</button>
+            
+            
+                <button class="numbers" id="" onclick="text(4)">4</button>
+                <button class="numbers" id="" onclick="text(5)">5</button>
+                <button class="numbers" id="" onclick="text(6)">6</button>
+                <button class="operators cha" id="subtract" onclick="operator('-')">-</button>
+            
+            
+                <button class="numbers" id="" onclick="text(1)">1</button>
+                <button class="numbers" id="" onclick="text(2)">2</button>
+                <button class="numbers" id="" onclick="text(3)">3</button>
+                <button class="operators cha" id="add" onclick="operator('+')">+</button>
+            
+            
+                <button class="operators" id="negate" onclick="negate()">±</button>
+                <button class="numbers" id="zero" onclick="text(0)">0</button>
+                <button class="operators" id="dot" onclick="text('.')">.</button>
+                <button class="operators cha" id="equal" onclick="FindResult()">=</button>
+                
+                
+                <br>
+                <div id="light"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
